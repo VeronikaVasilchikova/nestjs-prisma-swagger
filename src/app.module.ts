@@ -3,11 +3,13 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 // import { ConfigModule } from './config/config.module';
 import { ArticlesModule } from './articles/articles.module';
+import { UsersModule } from './users/users.module';
 
 @Module({
   imports: [
     // ConfigModule.register({ folder: './config' }),
     ArticlesModule,
+    UsersModule,
   ],
   controllers: [AppController],
   providers: [AppService],
